@@ -10,7 +10,7 @@ public class TestProperties {
 
     private static TestProperties INSTANCE = null;
 
-    private TestProperties(){
+    private TestProperties() {
         try {
             properties.load(new FileInputStream(new File("./application.properties")));
         } catch (IOException e) {
@@ -19,7 +19,7 @@ public class TestProperties {
     }
 
     public static TestProperties getInstance() {
-        if (INSTANCE == null){
+        if (INSTANCE == null) {
             INSTANCE = new TestProperties();
         }
         return INSTANCE;

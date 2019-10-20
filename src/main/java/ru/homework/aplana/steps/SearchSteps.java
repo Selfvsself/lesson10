@@ -10,13 +10,13 @@ public class SearchSteps {
     @Когда("Ограничить поле \"(.+)\" от \"(.+)\"")
     @Step("Ограничиваем товары по полю {0} от {1}")
     public void selectRangeFrom(String nameFiled, String value) {
-        searchPage.selectRangeFrom(nameFiled,"от", value);
+        searchPage.selectRangeFrom(nameFiled, "от", value);
     }
 
     @Когда("Ограничить поле \"(.+)\" до \"(.+)\"")
     @Step("Ограничиваем товары по полю {0} до {1}")
     public void selectRangeUp(String nameFiled, String value) {
-        searchPage.selectRangeFrom(nameFiled,"до", value);
+        searchPage.selectRangeFrom(nameFiled, "до", value);
     }
 
     @Когда("Отметить чекбокс \"(.+)\"")

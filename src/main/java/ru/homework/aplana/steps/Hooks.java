@@ -17,13 +17,13 @@ public class Hooks {
     private static String baseUrl;
     private static Properties properties = TestProperties.getInstance().getProperties();
 
-    public static WebDriver getDriver(){
+    public static WebDriver getDriver() {
         return driver;
     }
 
     @Before
     public void setUp() {
-        switch (properties.getProperty("browser")){
+        switch (properties.getProperty("browser")) {
             case "firefox":
                 System.setProperty("webdriver.gecko.driver", properties.getProperty("webdriver.gecko.driver"));
                 driver = new FirefoxDriver();
