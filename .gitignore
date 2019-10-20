@@ -1,0 +1,8 @@
+/.allure/*
+/.idea/*
+
+
+
+/target*
+
+lesson10.iml
